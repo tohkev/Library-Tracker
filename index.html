@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Library Tracker</title>
+  </head>
+  <body>
+    <header class="top">
+      <div class="container">
+        <nav class="navbar navbar-light">
+          <div class="right">
+            <h1>Library Tracker</h1>
+          </div>
+          <ul class="navbar-nav mr-auto left">
+            <li class="nav-item">
+              <p>Books Read: <span class="read-count">0</span></p>
+            </li>
+            <li class="nav-item">
+              <p>Unread Books: <span class="unread-count">0</span></p>
+            </li>
+            <li class="nav-item">
+              <p>Total books: <span class="total-count">0</span></p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container library">
+      <h2>Add a Book:</h2>
+      <section class="inputs">
+        <div class="row">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">
+                Title
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Book Title" />
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">
+                By:
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Author" />
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">
+                Genre(s)
+              </span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Comedy, Drama..."
+            />
+          </div>
+          <button class="btn btn-primary add">Add</button>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="catalog-header hline-break">
+          <span class="col-3">Title</span>
+          <span class="col-3">Author</span>
+          <span class="col-3">Genre</span>
+          <span class="col-3">Action</span>
+        </div>
+        <div class="catalog-entry hline-break">
+          <span class="col-3">21 Jump Street</span>
+          <span class="col-3">J.K. Rowling</span>
+          <span class="col-3">Romantic, Drama</span>
+          <div class="buttons col-3">
+            <button class="btn btn-light entry-button">Read</button>
+            <button class="btn btn-danger entry-button">Delete</button>
+          </div>
+        </div>
+        <div class="catalog-entry hline-break">
+          <span class="col-3">21 Jump Street</span>
+          <span class="col-3">J.K. Rowling</span>
+          <span class="col-3">Romantic, Drama</span>
+          <div class="buttons col-3">
+            <button class="btn btn-light entry-button">Read</button>
+            <button class="btn btn-danger entry-button">Delete</button>
+          </div>
+        </div>
+        <div class="catalog-entry hline-break">
+          <span class="col-3">21 Jump Street</span>
+          <span class="col-3">J.K. Rowling</span>
+          <span class="col-3">Romantic, Drama</span>
+          <div class="buttons col-3">
+            <button class="btn btn-light entry-button">Read</button>
+            <button class="btn btn-danger entry-button">Delete</button>
+          </div>
+        </div>
+        <div class="catalog-entry hline-break">
+          <span class="col-3">21 Jump Street</span>
+          <span class="col-3">J.K. Rowling</span>
+          <span class="col-3">Romantic, Drama</span>
+          <div class="buttons col-3">
+            <button class="btn btn-light entry-button">Read</button>
+            <button class="btn btn-danger entry-button">Delete</button>
+          </div>
+        </div>
+        <div class="catalog-entry hline-break">
+          <span class="col-3">21 Jump Street</span>
+          <span class="col-3">J.K. Rowling</span>
+          <span class="col-3">Romantic, Drama</span>
+          <div class="buttons col-3">
+            <button class="btn btn-light entry-button">Read</button>
+            <button class="btn btn-danger entry-button">Delete</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
