@@ -18,10 +18,10 @@
     <header class="top">
       <div class="container">
         <nav class="navbar navbar-light">
-          <div class="right">
+          <div class="left">
             <h1>Library Tracker</h1>
           </div>
-          <ul class="navbar-nav mr-auto left">
+          <ul class="navbar-nav mr-auto right">
             <li class="nav-item">
               <p>Books Read: <span class="read-count">0</span></p>
             </li>
@@ -38,14 +38,20 @@
     <main class="container library">
       <h2>Add a Book:</h2>
       <section class="inputs">
-        <div class="row">
+        <form action="#" class="row">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">
                 Title
               </span>
             </div>
-            <input type="text" class="form-control" placeholder="Book Title" />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Book Title"
+              id="title"
+              required
+            />
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
@@ -53,7 +59,13 @@
                 By:
               </span>
             </div>
-            <input type="text" class="form-control" placeholder="Author" />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Author"
+              id="author"
+              required
+            />
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
@@ -65,10 +77,12 @@
               type="text"
               class="form-control"
               placeholder="Comedy, Drama..."
+              id="genre"
+              required
             />
           </div>
-          <button class="btn btn-primary add">Add</button>
-        </div>
+          <button class="btn btn-primary add" id="addbtn">Add</button>
+        </form>
       </section>
       <section class="catalog">
         <div class="catalog-header hline-break">
@@ -77,49 +91,17 @@
           <span class="col-3">Genre</span>
           <span class="col-3">Action</span>
         </div>
-        <div class="catalog-entry hline-break">
-          <span class="col-3">21 Jump Street</span>
-          <span class="col-3">J.K. Rowling</span>
-          <span class="col-3">Romantic, Drama</span>
-          <div class="buttons col-3">
-            <button class="btn btn-light entry-button">Read</button>
-            <button class="btn btn-danger entry-button">Delete</button>
-          </div>
-        </div>
-        <div class="catalog-entry hline-break">
-          <span class="col-3">21 Jump Street</span>
-          <span class="col-3">J.K. Rowling</span>
-          <span class="col-3">Romantic, Drama</span>
-          <div class="buttons col-3">
-            <button class="btn btn-light entry-button">Read</button>
-            <button class="btn btn-danger entry-button">Delete</button>
-          </div>
-        </div>
-        <div class="catalog-entry hline-break">
-          <span class="col-3">21 Jump Street</span>
-          <span class="col-3">J.K. Rowling</span>
-          <span class="col-3">Romantic, Drama</span>
-          <div class="buttons col-3">
-            <button class="btn btn-light entry-button">Read</button>
-            <button class="btn btn-danger entry-button">Delete</button>
-          </div>
-        </div>
-        <div class="catalog-entry hline-break">
-          <span class="col-3">21 Jump Street</span>
-          <span class="col-3">J.K. Rowling</span>
-          <span class="col-3">Romantic, Drama</span>
-          <div class="buttons col-3">
-            <button class="btn btn-light entry-button">Read</button>
-            <button class="btn btn-danger entry-button">Delete</button>
-          </div>
-        </div>
-        <div class="catalog-entry hline-break">
-          <span class="col-3">21 Jump Street</span>
-          <span class="col-3">J.K. Rowling</span>
-          <span class="col-3">Romantic, Drama</span>
-          <div class="buttons col-3">
-            <button class="btn btn-light entry-button">Read</button>
-            <button class="btn btn-danger entry-button">Delete</button>
+        <div class="catalog-list">
+          <div class="catalog-entry hline-break">
+            <span class="col-3 title">Example Title</span>
+            <span class="col-3 author">Example Author</span>
+            <span class="col-3 genre">Romantic, Comedy</span>
+            <div class="buttons col-3">
+              <button class="btn btn-light entry-button readbtn"></button>
+              <button class="btn btn-danger entry-button deletebtn">
+                Delete
+              </button>
+            </div>
           </div>
         </div>
       </section>

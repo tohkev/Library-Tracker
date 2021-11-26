@@ -11,21 +11,26 @@ header {
   background: #e0afa0;
 }
 
-.left,
+.left {
+  width: 40%;
+  margin-bottom: 1.5rem;
+}
+
 .right {
-  width: 50%;
-  margin-bottom: 1rem;
+  width: 60%;
+  margin-bottom: 1.5rem;
 }
 
 li.nav-item {
   font-size: 1.5rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 ul.navbar-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 1rem;
 }
 
 /********************* LIBRARY STYLES ********************/
@@ -45,6 +50,9 @@ button.add {
   margin-top: 1rem;
   margin-left: 0.75rem;
   width: 8%;
+  padding: 0.25rem 1rem;
+  border: 2px solid black;
+  text-align: center;
 }
 
 .catalog {
@@ -56,6 +64,7 @@ button.add {
   justify-content: center;
   align-items: center;
   width: 90%;
+  box-sizing: border-box;
 }
 
 .catalog-entry {
@@ -63,7 +72,9 @@ button.add {
   justify-content: center;
   align-items: center;
   width: 90%;
-  margin-left: 1rem;
+  margin-right: 1rem;
+  box-sizing: border-box;
+  padding-top: 1rem;
 }
 
 .catalog-entry * {
@@ -72,10 +83,11 @@ button.add {
 
 .catalog-entry button {
   border: 2px solid black;
+  padding: 0.25rem 1.5rem;
 }
 
 .buttons {
-  margin-left: 1rem;
+  text-align: center;
 }
 
 .hline-break {
@@ -84,5 +96,13 @@ button.add {
 }
 
 .entry-button {
-  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.readbtn::after {
+  content: "Read";
+}
+
+.unreadbtn::after {
+  content: "Unread";
 }
