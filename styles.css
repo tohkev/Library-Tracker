@@ -24,6 +24,7 @@ header {
 li.nav-item {
   font-size: 1.5rem;
   margin-right: 2rem;
+  line-height: 1.75rem;
 }
 
 ul.navbar-nav {
@@ -46,10 +47,14 @@ section.inputs .input-group {
   width: 31%;
 }
 
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
 button.add {
   margin-top: 1rem;
-  margin-left: 0.75rem;
-  width: 8%;
+  width: 10rem;
   padding: 0.25rem 1rem;
   border: 2px solid black;
   text-align: center;
@@ -84,6 +89,8 @@ button.add {
 .catalog-entry button {
   border: 2px solid black;
   padding: 0.25rem 1.5rem;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
 }
 
 .buttons {
@@ -105,4 +112,33 @@ button.add {
 
 .unreadbtn::after {
   content: "Unread";
+}
+
+/* ******************** MEDIA QUERIES *************************** */
+
+@media (max-width: 990px) {
+  .read-unread {
+    display: none;
+  }
+  .left,
+  .right {
+    width: 50%;
+  }
+
+  .block {
+    flex-direction: column;
+  }
+
+  section.inputs .input-group {
+    width: 85%;
+  }
+
+  button.add {
+    width: 15%;
+  }
+
+  .catalog-entry button {
+    width: 6rem;
+    padding: 0.25rem 0;
+  }
 }

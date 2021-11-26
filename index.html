@@ -22,10 +22,10 @@
             <h1>Library Tracker</h1>
           </div>
           <ul class="navbar-nav mr-auto right">
-            <li class="nav-item">
+            <li class="nav-item read-unread">
               <p>Books Read: <span class="read-count">0</span></p>
             </li>
-            <li class="nav-item">
+            <li class="nav-item read-unread">
               <p>Unread Books: <span class="unread-count">0</span></p>
             </li>
             <li class="nav-item">
@@ -38,48 +38,50 @@
     <main class="container library">
       <h2>Add a Book:</h2>
       <section class="inputs">
-        <form action="#" class="row">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">
-                Title
-              </span>
+        <form action="#">
+          <div class="block">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">
+                  Title
+                </span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Book Title"
+                id="title"
+                required
+              />
             </div>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Book Title"
-              id="title"
-              required
-            />
-          </div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">
-                By:
-              </span>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">
+                  By:
+                </span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Author"
+                id="author"
+                required
+              />
             </div>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Author"
-              id="author"
-              required
-            />
-          </div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">
-                Genre(s)
-              </span>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">
+                  Genre(s)
+                </span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Comedy, Drama..."
+                id="genre"
+                required
+              />
             </div>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Comedy, Drama..."
-              id="genre"
-              required
-            />
           </div>
           <button class="btn btn-primary add" id="addbtn">Add</button>
         </form>
