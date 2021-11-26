@@ -142,3 +142,9 @@ button.add {
     padding: 0.25rem 0;
   }
 }
+
+@media (max-width: 475px) {
+  button.add {
+    width: 25%;
+  }
+}
